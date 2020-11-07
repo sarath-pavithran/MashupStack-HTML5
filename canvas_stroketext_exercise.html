@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Stroke text Example</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="400" height="200" style="border:2px dotted #ffff00">
+		Your browser doesn't support the HTML canvas tag.
+	</canvas>
+	<script type="">
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.font = "20px Arial";
+		ctx.strokeText("Hello World! Biatchhhh!",50,100);
+	</script>
+</body>
+</html>

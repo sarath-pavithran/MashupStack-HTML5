@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"  content="width=device-width,initial-scale=1.0"> 
+	<meta http-equiv="refresh" content="5">
+	<title>w3School Testing</title>
+	<base href="C:\Users\Asus\Documents\WebDev\HTML\" target="_blank">
+</head>
+<body>
+	<form action="/input.php" autocomplete="on">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="fname">First Name</label>&nbsp;:&nbsp;
+		<input type="text" id="fname" name="txt_fname" value="Sarath" disabled="true" max="10"><br>
+		<label for="lname">Last Name</label>&nbsp;:&nbsp;
+		<input type="text" name="txt_lname" id="lname" maxlength="5" required="true"><br>
+		<label>Sex</label>&nbsp;:&nbsp;
+		<input type="radio" name="rd_gender" id="male" value="male">&nbsp;<label for-"male">Male</label>
+		<input type="radio" name="rd_gender" id="female" value="female">&nbsp;<label for="female">Female</label><br>
+		<label>Education Level</label><br>
+		<label for="sslc">SSLC</label>&nbsp;
+			<input type="checkbox" id="sslc" name="cb_sslc" value="SSLC" checked>&nbsp;
+		<label for="Higher Secondary">Higher Secondary</label>
+			<input type="checkbox" name="cb_higher" value="Higher Secondary" id="Higher Secondary" checked>
+		<label for="Graduate">Graduate</label>
+			<input type="checkbox" name="cb_graduate" id="Graduate" value="graduate"><br>
+		
+		<label for="Course">Select Degree</label><br>
+		<select name="sl_degree" id="Course">
+			<option value="BCA">BCA</option>
+			<option value="B.Com">B.Com</option>
+			<option value="BSC" selected="">B.Sc</option>
+			<option value="BA">BA</option>
+		</select>
+		<br>
+		<textarea name="txt_about" rows="10" cols="30" readonly="true" autofocus="on">Sarath Pavithran</textarea><br><br>
+		<label for="PG">Select the Post Graduation</label>
+		<input list="postg" id="PG" name="dl_pg">
+			<datalist id="postg">
+				<option value="MSC">
+				<option value="M.Com">
+				<option value="MA">
+			</datalist>
+		<input type="submit" name="bt_submit" value="Submit the Form"><br>
+		<label for="dob">Select Date Of birth</label>
+		<input type="date" min="1995-01-01" max="2005-01-01" name="dt_dob" value="1999-05-2">
+		<input type="file">
+	</fieldset>
+
+	</form>
+	
+</body>
+</html>

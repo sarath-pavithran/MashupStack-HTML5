@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title> Canvas Draw Image</title>
+	<script type="text/javascript">
+		function fn_onClick() {
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			var img = document.getElementById("img_scream");
+			ctx.drawImage(img,10,10);
+		}
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" width="300" height="350" style="border: 2px dotted #d3d3d3; float: right">
+		Your Browser Doesn't Support HTML Canvas Tag.
+	</canvas>
+	<img id="img_scream" src="Images/scream.png" alt="Scream Image" width="220" height="277"><br>
+	<p>
+		<button onclick="fn_onClick()">Try it Biatchhh!</button>
+	</p>
+
+</body>
+</html>

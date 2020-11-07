@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>My Canvas</title>
+
+	<style type="text/css">
+		.mCanvas {
+			border: 2px dotted #c3c3c3;
+
+		}
+	</style>
+</head>
+<body>
+	<canvas class="mCanvas" id="myCanvas" title="@d Canvas" height="200" width="400">Your Browser doesn't support HTML Canvas</canvas>
+	<canvas class="mCanvas" id="myCanvas2" height="200" width="400" style="float: right">
+		Your Browser doesn't support HTML Canvas
+	</canvas><br><br>
+	<canvas class="mCanvas" id="myCanvas3" height="200" width="400">
+		Your Browser doesn't support HTML Canvas
+	</canvas>
+	<canvas class="mCanvas" id="myCanvas4" height="200" width="400" style="float: right">
+		Your Browser doesn't support HTML Canvas
+	</canvas>
+	<script>
+		var c1=document.getElementById("myCanvas");
+		var ctx=c1.getContext("2d");
+		ctx.fillStyle = "#FF0000";
+		ctx.fillRect(0,100,200,200);
+		var c2=document.getElementById("myCanvas2");
+		ctx=c2.getContext("2d");
+		ctx.fillStyle = "#00FF00";
+		ctx.fillRect(200,100,400,200);
+		var c3=document.getElementById("myCanvas3");
+		ctx=c3.getContext("2d");
+		ctx.fillStyle = "#0000FF";
+		ctx.fillRect(0,0,200,100);
+		var c4=document.getElementById("myCanvas4");
+		ctx=c4.getContext("2d");
+		ctx.fillStyle = "#FF00FF";
+		ctx.fillRect(200,0,400,100);
+	</script>
+	</body>
+</html>

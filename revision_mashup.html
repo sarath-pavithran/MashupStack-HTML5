@@ -1,0 +1,185 @@
+<!-- doctype declaration for HTML5 -->
+<!DOCTYPE html>
+
+<!-- language attribute for the html tag-->
+<html lang="en-US">
+
+<head>
+  <!-- Adding a title to the page -->
+  <title>An HTML cheatsheet page</title>
+
+  <!-- external css -->
+  <link rel="stylesheet" type="text/css" href="test.css">
+  
+  <!-- internal css -->
+  <style>
+    .para {
+    color:green;
+    }
+    #para1 {
+      color:blue;
+    }
+  </style>
+  <!-- external js -->
+  <script type="text/javascript" src="test.js"></script>
+  
+  <!-- internal js -->
+  <script type="text/javascript">
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script>
+  
+  <!-- noscript -->
+  <noscript>Sorry, this site needs javascript to work</noscript>
+
+  <!-- Meta Tag -->
+  <meta charset="utf-8">
+
+  <!-- Meta tag for description. used by Google -->
+  <meta name="description" content="Explains the commonly used html tags in a single page for easy reference">  
+  
+  <!-- Meta tag for keywords. used by Google -->
+  <meta name="keywords" content="HTML, CSS, XML, JavaScript"> 
+  
+  <!-- Meta tag for author -->
+  <meta name="author" content="Sreenath Sasikumar"> 
+
+  <!-- Auto refresh after every 30 seconds -->
+  <meta http-equiv="refresh" content="30">
+  <!-- view port meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <!-- Headings - h1 to h6. h1 being the largest and h6 smallest -->
+  <h1>Welcome to MashupStack</h1>
+  <!-- horizontal line -->
+  <hr>
+  <!-- paragraph with various formatting and class -->
+  <p class="para">Lorem ipsum<br><br>dolor <b>sit amet</b>, consectetur <i>adipisicing</i> elit, sed do eiusmod
+  tempor <mark>incididunt</mark> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco 19<sup>th</sup> of March. laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor H<sub>2</sub>0 in reprehenderit in voluptate velit esse
+  <del>cillum dolore</del> eu fugiat nulla pariatur. <ins>Excepteur sint</ins> occaecat cupidatat non
+  proident, <u>sunt in culpa</u> qui officia deserunt mollit anim id est laborum.</p>
+
+  <!-- abbreviation tag and id attribute -->
+  <p id="para1">what is <abbr>WHO</abbr>?</p>
+  <!-- quotation -->
+  <q>Where is India</q> Obama asked.
+  <blockquote>To be or not to be, that's the question</blockquote> - Shakespere
+  <!-- pre tag -->
+  <pre>To preserve the new line, and whitespace.</pre>
+
+  <!-- image -->
+  <img src="mohalal.jpg" alt="Mohanlal" width="50%" height="50%">
+
+  <!-- Link opens in another tab  -->
+  <a href="news.html" target="_blank">Read More</a>
+  <!-- Link opens in another section of same page  -->
+  <a href="#contact" target="_blank">Read More</a>
+
+  <table>
+    <caption>Doctor Appointments</caption>
+    <tr>
+      <th>Name</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Dr. Vijay</td>
+      <td>9am</td>
+    </tr>
+    <tr>
+      <td>Dr. Raghav</td>
+      <td>10am</td>
+    </tr>
+  </table>
+
+  <!-- unordered list and span tag-->
+  <p>The doctor has asked <span style="color:red;">you</span> not to take the following:-</p>
+  <ul style="list-style-type:square">
+    <li>Tea</li>
+    <li>Coffee</li>
+  </ul>
+
+  <!-- ordered list -->
+  <p>The doctor has also asked you not to take the following:-</p>
+  <ol type="A">
+    <li>Sugar</li>
+    <li>Oil</li>
+  </ol>
+
+  <code>4 + 5</code>
+  <!-- internal link to contact section of the page -->
+  <div id="contact">
+    <!-- bold tag and tooltip-->
+    <p title="Call us for any queries."><b>Phone: </b>+91-9605517668</p>
+    <!-- address tag -->
+    <p><address>Mashupstack, Sweedish Towers, Ireland</address></p>
+  </div>
+
+  <!-- iframe -->
+  <iframe src="http://www.example.com" width="100px" height="100px"></iframe>
+
+  <!-- form tag with  method, name, action and autocomplete attributes-->
+  <form method="POST" name="form-1" action="test.php" autocomplete="off">
+    <input type="text" name="fullname">
+    <input type="email" name="email">
+    <input type="password" name="password">
+
+    <!-- checkbox -->
+    <input type="checkbox" name="veg">Vegetarian food<br>
+
+    <!-- radio button -->
+    <input type="radio" name="gender" value="male" checked="checked">
+    <input type="radio" name="gender" value="female">
+    
+    <!-- select box -->
+    <select multiple>
+      <option value="1" selected>1 ticket</option>
+      <option value="2">2 tickets</option>
+      <option value="3">3 tickets</option>
+    </select>
+
+    <!-- datalist tag -->
+    <input list="browsers">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+
+    <!-- text area -->
+    <textarea rows="10" cols="15"></textarea>
+    
+    <!-- submit buttons -->
+    <button type="button">Click Me!</button>
+    <input type="submit" name="submit">
+
+    <!-- reset button -->
+    <input type="reset">
+
+    <!-- extra -->
+    <input type="date">
+    <input type="color">
+    <input type="file">
+    <input type="datetime-local">
+    <input type="month">
+    <input type="number">
+    <input type="range">
+    <input type="tel">
+    <input type="url">
+    <input type="week">
+    <input type="time">
+
+    <!-- input tag with the input type attributes -->
+    <input type="text" name="lastname" required placeholder="Enter your lastname" readonly disabled size="40" maxlength="10" autofocus autocomplete="off">
+  <!-- new html5 footer tag -->
+  <footer>
+
+  <!-- html entities -->
+  &copy;&nbsp;&nbsp;Mashpustack 2018
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport" content="width=device-width,initial-scale=1.0">
+	<title>Drawing Line</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="400" height="200" style="border: 2px dotted #d3d3d3;">
+		Your browser doesn't support the HTML Canvas tag.
+	</canvas>
+	<script type="text/javascript">
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.moveTo(100,100);
+		ctx.lineTo(300,100);
+		ctx.stroke();
+		ctx.moveTo(300,100);
+		ctx.lineTo(200,200);
+		ctx.stroke();
+		ctx.moveTo(200,200);
+		ctx.lineTo(100,100);
+		ctx.stroke();
+		ctx.moveTo(200,50);
+		ctx.lineTo(100,150);
+		ctx.stroke();
+		ctx.moveTo(100,150);
+		ctx.lineTo(300,150);
+		ctx.stroke();
+		ctx.moveTo(300,150);
+		ctx.lineTo(200,50);
+		ctx.stroke();
+
+	</script>
+
+</body>

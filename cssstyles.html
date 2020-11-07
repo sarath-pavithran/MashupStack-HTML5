@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>To try CSS Styles</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Login Info:</legend>
+			<label for="name" >Name</label>&nbsp;:&nbsp;
+			<input type="text" name="name" id="name" placeholder="Sarath Pavithran" required maxlength="25"><br><br>
+			<label for="email">Email</label>&nbsp;:&nbsp;
+			<input type="text" name="email" id="email" value="test@example.com" required autofocus><br><br>
+			<label for="password">Password</label>&nbsp;:&nbsp;
+			<input type="password" name="password" id="password" required maxlength="6">
+		</fieldset><br><br>
+		<label for="category">Category</label>&nbsp;:&nbsp;
+		<select name="category" id="category" required>
+			<option value="Student">Student</option>
+			<option value="Employee">Employee</option>
+			<option value="Freelancer" selected>Freelancer</option>
+		</select><br><br>
+		<label for="e_date">Event Date</label>
+		<input type="date" name="Event Date" id="e_date" required><br><br>
+		<fieldset>
+			<legend>Ticket</legend>
+			<input type="radio" id="1ticket" name="ticket" value="1 Ticket" required>&nbsp;
+			<label for="1ticket">1 Ticket</label>&nbsp;
+			<input type="radio" name="ticket" id="2ticket" value="2 Ticket" required checked>&nbsp;
+			<label for="2ticket">2 Ticket</label>
+			<input type="radio" name="ticket" id="3ticket" value="3 Ticket" required>&nbsp;
+			<label for="3ticket">3 Ticket</label><br>
+		</fieldset><br>
+		<label for="Payment">Payment</label>&nbsp;
+		<input type="checkbox" name="Payment" id="online_payment" value="Online Payment" required>Online Payment<br><br>
+		<label for="notes">Notes</label><br>
+		<textarea rows="10" cols=30 name="Notes" id="notes" placeholder="Describe yourself"></textarea><br>
+		<input type="submit" name="submit">&nbsp;&nbsp;
+		<input type="reset" name="reset" value="reset">
+
+
+
+
+	</form>
+</body>
